@@ -6426,7 +6426,7 @@ body:not(.event-like-and-share-buttons) .event-meta-socialicon-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-image: url('//static.squarespace.com/universal/images-v6/icons/icon-video-24-light-solid.png');
+    background-image: url('img/icon-video-24-light-solid.png');
     background-position: center center;
     height: 24px;
     width: 24px;
@@ -6434,7 +6434,7 @@ body:not(.event-like-and-share-buttons) .event-meta-socialicon-container {
     margin-top: -12px
 }
 .sqs-block .sqs-gallery-thumbnails .sqs-video-thumbnail.no-image .sqs-video-thumbnail-inner {
-    background-image: url('//static.squarespace.com/universal/images-v6/icons/icon-video-24-light-solid.png');
+    background-image: url('img/icon-video-24-light-solid.png');
     background-position: center center;
     background-repeat: no-repeat
 }

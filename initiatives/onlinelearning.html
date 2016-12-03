@@ -27,27 +27,674 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="description" content="" />
 <script type="text/javascript" src="../js/typekit.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
-<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//static.squarespace.com/universal/scripts-compressed/common-3d18494811f09fbe543f-min.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
-<script crossorigin="anonymous" src="//static.squarespace.com/universal/scripts-compressed/common-3d18494811f09fbe543f-min.js"></script><script type="text/javascript" data-sqs-type="imageloader">(function() {var EXCLUDED_SIZES=function(){var a=window.location.search,b=a.indexOf("exclude_imageloader_sizes=");return-1<b&&(a=a.substr(b+26).split("&")[0])?a.split(",").map(function(a){return parseInt(a,10)}):[]}(),SQUARESPACE_SIZES=[2500,1500,1E3,750,500,300,100].filter(function(a){return-1===EXCLUDED_SIZES.indexOf(a)}),IMAGE_LOADING_CLASS="loading",ImageLoader=new function(){this.load=function(a,b){function d(a,b,c){var d=new Image;d.onload=b;d.onerror=c;d.src=a}a.getDOMNode&&(a=a.getDOMNode());var c=this._getDataFromNode(a,
-b),e=!(!c.dimensions||!c.dimensions.width||!c.dimensions.height),g=c.load+"";if("false"===g)return!1;var h=c.mode;if(e&&("fit"===h||"fill"===h)){h=a.parentNode;if(!h)return console.error("Not doing anything, parentNode not found."),!1;if(!this.refresh(a,b,h))return!1}var n=this._intendToLoad(a,c);if("string"===typeof n&&"viewport"!==g){var m=this.getUrl(n,c),g=a.getAttribute("data-image-resolution");a.getAttribute("src")!==m&&this.isValidResolution(n,g)&&(a.onload=function(){a.className=a.className.replace(IMAGE_LOADING_CLASS,
-" ").trim();a.setAttribute("data-image-resolution",n)},!a.getAttribute("src")&&-1===a.className.indexOf(IMAGE_LOADING_CLASS)&&(a.className+=(a.className?" ":"")+IMAGE_LOADING_CLASS),!a.getAttribute("src")&&e?(a.setAttribute("src",m),c.useBgImage&&(a.parentNode.style.backgroundImage="url("+m+")")):d(m,function(){e?a.setAttribute("src",m):(a.setAttribute("data-image-dimensions",this.width+"x"+this.height),ImageLoader.load(a,b))},function(){a.className=a.className.replace(IMAGE_LOADING_CLASS," ").trim();
-a.setAttribute("src",m)}));return!0}return n};this.refresh=function(a,b,d){a.getDOMNode&&(a=a.getDOMNode());d&&d.getDOMNode&&(d=d.getDOMNode());d=d||a.parentNode;if(!d)return console.error("Not doing anything, parentNode not found."),!1;var c=this._getDataFromNode(a,b),e=d.offsetWidth,g=d.offsetHeight;b=c.mode;if("none"!==b){var h=c.dimensions.width,n=c.dimensions.height,m=h/n,q=e/g;if(c.useBgImage&&"fill"===b&&"backgroundSize"in document.documentElement.style)return a.style.display="none",d.style.backgroundSize=
-"cover",d.style.backgroundPosition=100*c.focalPoint.x+"% "+100*c.focalPoint.y+"%",!0;if(c.fixedRatio)"fill"==b&&q>m||"fit"==b&&q<m?(k=100,l=100*(q/m),r=(100-l)*c.focalPoint.y,p=0):(k=100*(m/q),l=100,r=0,p=(100-k)*c.focalPoint.x),a.style.top=r+"%",a.style.left=p+"%",a.style.width=k+"%",a.style.height=l+"%";else{var f;"fill"===b?f=m>q?g/n:e/h:"fit"===b&&(f=m<q?g/n:e/h);!c.stretch&&"fit"==b&&1<f&&(f=1);var k=Math.ceil(h*f),l=Math.ceil(n*f);if(0===k||0===l)return!1;var p,r;"fill"===b?(p=Math.min(Math.max(e/
-2-k*c.focalPoint.x,e-k),0),r=Math.min(Math.max(g/2-l*c.focalPoint.y,g-l),0)):"fit"===b&&(f=c.fitAlignment,p=f.left?0:f.right?e-k:k<e?(e-k)/2:0,r=f.top?0:f.bottom?g-l:l<g?(g-l)/2:0,"inline"==this._getStyle(a,"display")&&(a.style.fontSize="0px"),this._resetAlt(a,function(){k-=a.offsetHeight-a.clientHeight;l-=a.offsetWidth-a.clientWidth}));a.style.top=Math.ceil(r)+"px";a.style.left=Math.ceil(p)+"px";a.style.width=Math.ceil(k)+"px";a.style.height=Math.ceil(l)+"px"}p=this._getStyle(d,"position");a.style.position=
-"relative"==p?"absolute":"relative";if("fill"==b&&(b=this._getStyle(d,"overflow"),!b||"hidden"!=b))d.style.overflow="hidden";return!0}};this._intendToLoad=function(a,b){function d(c,d){"none"===b.mode&&(a.style.width=null,a.style.height=null);var e=parseFloat(a.getAttribute(c)),f=parseFloat(e);if(!f||isNaN(f))e=h._getStyle(a,c),f=parseFloat(e);if(!f||isNaN(f))e=h._getStyle(a,"max-"+c,"max"+(c.substr(0,1).toUpperCase()+c.substr(1))),f=parseFloat(e);if(0===d||e)switch(h._stringType(e)){case "percentage":d=
-parseInt(e,10)/100*g["offset"+c.substr(0,1).toUpperCase()+c.substr(1)];break;case "number":d=parseInt(e,10)}!f&&0!==d&&!a.getAttribute("src")&&(d=0);return d}b=b||this._getDataFromNode(a);if(!b.source)return!1;var c=a.offsetWidth,e=a.offsetHeight,g=a.parentNode,h=this;this._resetAlt(a,function(){c=d("width",c);e=d("height",e)});0===c&&0===e?(c=b.dimensions.width,e=b.dimensions.height):0===c?c=this.getDimensionForValue("width",e,b):0===e&&(e=this.getDimensionForValue("height",c,b));"viewport"===b.load&&
-(a.style.width=Math.floor(c)+"px",a.style.height=Math.floor(e)+"px");return this.getSquarespaceSize(c,e,b)};this._getDataFromNode=function(a,b){b=b||{};var d={focalPoint:{x:0.5,y:0.5},dimensions:{width:null,height:null},mode:"none",fitAlignment:{center:!0},load:"true",stretch:!0,fixedRatio:!1};if(b.focalPoint)d.focalPoint=b.focalPoint;else{var c=a.getAttribute("data-image-focal-point");if(c&&(c=c.split(","))&&2==c.length)d.focalPoint={x:parseFloat(c[0]),y:parseFloat(c[1])}}if(b.dimensions)d.dimensions=
-b.dimensions;else if((c=a.getAttribute("data-image-dimensions"))&&(c=c.split("x"))&&2==c.length)d.dimensions={width:parseInt(c[0],10),height:parseInt(c[1],10)};b.mode?d.mode=b.mode:a.parentNode&&(c=a.parentNode.className,-1!==c.indexOf("content-fill")?d.mode="fill":-1!==c.indexOf("content-fit")&&(d.mode="fit"));if("fit"===d.mode&&a.parentNode&&(c=b.fitAlignment||a.getAttribute("data-alignment")||a.parentNode.getAttribute("data-alignment")))d.fitAlignment={top:-1!==c.indexOf("top"),left:-1!==c.indexOf("left"),
-center:-1!==c.indexOf("center"),right:-1!==c.indexOf("right"),bottom:-1!==c.indexOf("bottom")};b.load?d.load=b.load:(c=a.getAttribute("data-load"))&&(d.load=c);if("undefined"!==typeof b.stretch)d.stretch=b.stretch;else if(c=a.getAttribute("data-image-stretch"))d.stretch="true"===c?!0:!1;d.source=b.source?b.source:a.getAttribute("data-src");d.source&&this.isSquarespaceUrl(d.source)&&("http:"===d.source.substr(0,5)&&"https"===window.location.protocol.substr(0,5))&&(d.source=d.source.replace("http://",
-"https://"));if(b.fixedRatio)d.fixedRatio=b.fixedRatio;else if(c=a.getAttribute("data-fixed-ratio"))d.fixedRatio="true"==c;b.useBgImage?d.useBgImage=b.useBgImage:(c=a.getAttribute("data-use-bg-image"),d.useBgImage="true"===c||!0===c?!0:!1);return d};this._stringType=function(a){return"string"===typeof a&&-1!==a.indexOf("%")?"percentage":isNaN(parseInt(a,10))?NaN:"number"};this._getStyle=function(a,b,d){var c;a.currentStyle?c=a.currentStyle[d||b]:window.getComputedStyle&&(c=document.defaultView.getComputedStyle(a,
-null).getPropertyValue(b));return c};this._isVisible=function(a){a=a.getBoundingClientRect();return 0<=a.left&&0<=a.top||0<=a.bottom&&0<=a.right||0<=a.left&&0<=a.bottom||0<=a.right&&0<=a.top};this.getSquarespaceSize=function(a,b,d){a=Math.max(b/(d.dimensions.height/d.dimensions.width),a);"undefined"===typeof app&&"number"===typeof window.devicePixelRatio&&(a*=window.devicePixelRatio);for(b=1;b<SQUARESPACE_SIZES.length&&!(a>SQUARESPACE_SIZES[b]);b++);return SQUARESPACE_SIZES[b-1]+"w"};this.getDimensionForValue=
-function(a,b,d){var c=d.dimensions.width;d=d.dimensions.height;return"width"==a?c/d*b:"height"==a?d/c*b:NaN};this.getUrl=function(a,b){var d=b.source;return a&&("/"==d[0]||this.isSquarespaceUrl(d))?(-1===d.indexOf("format="+a)&&(d=d+(-1!==d.indexOf("?")?"&":"?")+"format="+a),d):b.source};this.isSquarespaceUrl=function(a){return-1!==a.indexOf("squarespace.com")||-1!==a.indexOf("squarespace.net")||-1!==a.indexOf("sqsp.net")};this.isValidResolution=function(a,b){a=parseInt(a,10);b=parseInt(b,10);return isNaN(a)||
-isNaN(b)?!0:a>b};this._resetAlt=function(a,b){var d=a.getAttribute("alt"),c=d&&0<d.length&&!a.getAttribute("src");if(c){var e=a.style.display;a.removeAttribute("alt");a.style.display="none";a.offsetHeight+0;a.style.display=e}b.call(this);c&&a.setAttribute("alt",d)};this.bootstrap=function(){var a=document.images;if(0<a.length)for(var b=0,d=a.length;b<d;b++)((a[b].hasAttribute?a[b].hasAttribute("data-image"):a[b].attributes["data-image"])||(a[b].hasAttribute?a[b].hasAttribute("data-src"):a[b].attributes["data-src"]))&&
-"false"!==(a[b].getAttribute?a[b].getAttribute("data-load"):a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=ImageLoader;window.YUI&&YUI.add("squarespace-imageloader",function(a){},"1.0",{requires:[]});
-})();</script>
-<script>Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","rollups":{"squarespace-announcement-bar":{"css":"//static.squarespace.com/universal/styles-compressed/announcement-bar-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/announcement-bar-255cecc1cf494d88d1ed-min.js"},"squarespace-audio-player":{"css":"//static.squarespace.com/universal/styles-compressed/audio-player-76e4bfcc3f9830beb388bae2002fbe6c-min.css","js":"//static.squarespace.com/universal/scripts-compressed/audio-player-3ea6af3255a6d23d0a81-min.js"},"squarespace-blog-collection-list":{"css":"//static.squarespace.com/universal/styles-compressed/blog-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/blog-collection-list-b5d30a1c72f9aabbf44e-min.js"},"squarespace-calendar-block-renderer":{"css":"//static.squarespace.com/universal/styles-compressed/calendar-block-renderer-032634519fa160b1d2da6986dce0cdae-min.css","js":"//static.squarespace.com/universal/scripts-compressed/calendar-block-renderer-5a699855af07ec227238-min.js"},"squarespace-chartjs-helpers":{"css":"//static.squarespace.com/universal/styles-compressed/chartjs-helpers-9935a41d63cf08ca108505d288c1712e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/chartjs-helpers-af3738629c6ec08afe3a-min.js"},"squarespace-comments":{"css":"//static.squarespace.com/universal/styles-compressed/comments-c1dbdfabfadb78eda284e5af702a4505-min.css","js":"//static.squarespace.com/universal/scripts-compressed/comments-cee0bd99dbe1ae97ee79-min.js"},"squarespace-dialog":{"css":"//static.squarespace.com/universal/styles-compressed/dialog-41403d1f0d87846c1b05baa36a8d7c38-min.css","js":"//static.squarespace.com/universal/scripts-compressed/dialog-a137c90ca7db429bef17-min.js"},"squarespace-events-collection":{"css":"//static.squarespace.com/universal/styles-compressed/events-collection-032634519fa160b1d2da6986dce0cdae-min.css","js":"//static.squarespace.com/universal/scripts-compressed/events-collection-ef000ae08742cf220fcd-min.js"},"squarespace-gallery-collection-list":{"css":"//static.squarespace.com/universal/styles-compressed/gallery-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/gallery-collection-list-e1ed1954da9f16b56d45-min.js"},"squarespace-image-zoom":{"css":"//static.squarespace.com/universal/styles-compressed/image-zoom-ae974921915aeccaff8ad60c60e19c31-min.css","js":"//static.squarespace.com/universal/scripts-compressed/image-zoom-51c8f17420ab45066403-min.js"},"squarespace-pinterest":{"css":"//static.squarespace.com/universal/styles-compressed/pinterest-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/pinterest-d8da6511f2eb4de3e4bb-min.js"},"squarespace-product-quick-view":{"css":"//static.squarespace.com/universal/styles-compressed/product-quick-view-eb4b900ac0155bed2f175aa82e2a7c17-min.css","js":"//static.squarespace.com/universal/scripts-compressed/product-quick-view-f47a2e1b22bc44954d6b-min.js"},"squarespace-products-collection-item-v2":{"css":"//static.squarespace.com/universal/styles-compressed/products-collection-item-v2-ae974921915aeccaff8ad60c60e19c31-min.css","js":"//static.squarespace.com/universal/scripts-compressed/products-collection-item-v2-2e0088e56234d05f67a6-min.js"},"squarespace-products-collection-list-v2":{"css":"//static.squarespace.com/universal/styles-compressed/products-collection-list-v2-ae974921915aeccaff8ad60c60e19c31-min.css","js":"//static.squarespace.com/universal/scripts-compressed/products-collection-list-v2-f5260cb9f989ad2d9cbe-min.js"},"squarespace-search-page":{"css":"//static.squarespace.com/universal/styles-compressed/search-page-9e3daa07ec7490c2f0be98a39351cb63-min.css","js":"//static.squarespace.com/universal/scripts-compressed/search-page-15f41a4531e671a3d981-min.js"},"squarespace-share-buttons":{"js":"//static.squarespace.com/universal/scripts-compressed/share-buttons-8635c52fecea68b9dedc-min.js"},"squarespace-simple-liking":{"css":"//static.squarespace.com/universal/styles-compressed/simple-liking-09fa291ec2800c97714f0d157fd0a6ca-min.css","js":"//static.squarespace.com/universal/scripts-compressed/simple-liking-d44ab1b0365494cdb742-min.js"},"squarespace-social-buttons":{"css":"//static.squarespace.com/universal/styles-compressed/social-buttons-7a696232d1cd101fd62b5f174f9ae6ff-min.css","js":"//static.squarespace.com/universal/scripts-compressed/social-buttons-7dcb8f45203f0e6b21f7-min.js"},"squarespace-tourdates":{"css":"//static.squarespace.com/universal/styles-compressed/tourdates-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/tourdates-3f33e6971c462cdde221-min.js"}},"pageType":2,"website":{"id":"583579706b8f5ba7a0c5757b","identifier":"mr-bean-k6m4","websiteType":1,"contentModifiedOn":1480669162615,"cloneable":false,"siteStatus":{},"language":"en-US","timeZone":"America/Los_Angeles","machineTimeZoneOffset":-28800000,"timeZoneOffset":-28800000,"timeZoneAbbr":"PST","siteTitle":"M-Soma Institute","siteTagLine":"Creating opportunities in Computer Science education","siteDescription":"","logoImageId":"5840cb21c534a570921fac6e","socialLogoImageId":"5836a276ebbd1a49b8c53758","shareButtonOptions":{"3":true,"4":true,"6":true,"1":true,"7":true,"5":true,"2":true,"8":true},"logoImageUrl":"//static1.squarespace.com/static/583579706b8f5ba7a0c5757b/t/5840cb21c534a570921fac6e/1480669162615/","socialLogoImageUrl":"//static1.squarespace.com/static/583579706b8f5ba7a0c5757b/t/5836a276ebbd1a49b8c53758/1480669162615/","authenticUrl":"https://mr-bean-k6m4.squarespace.com","internalUrl":"https://mr-bean-k6m4.squarespace.com","baseUrl":"https://mr-bean-k6m4.squarespace.com","sslSetting":3,"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false},"websiteSettings":{"id":"583579706b8f5ba7a0c5757d","websiteId":"583579706b8f5ba7a0c5757b","subjects":[],"country":"US","state":"CA","markdownMode":false,"simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"lastAgreedTermsOfService":2,"defaultPostFormat":"%y/%m/%d/%t","commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","homepageTitleFormat":"%s","collectionTitleFormat":"%c \u2014 %s","itemTitleFormat":"%i \u2014 %s","commentsEnabled":false,"allowSquarespacePromotion":true,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"paymentSettings":{},"expressCheckout":false,"useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["USD","CAD","GBP","AUD","EUR","CHF","NOK","SEK","DKK","NZD","SGD","MXN","HKD"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"stripeConnected":false,"isLive":false},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false,"interfaceType":1},"websiteCloneable":false,"collection":{"title":"Online Learning","id":"58412f22bebafba4c290e946","fullUrl":"/online-learning/","type":10},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","banner-slideshow-controls":"Arrows","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Grid","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","gridSize":"280px","gridSpacing":"10px","logoContainerWidth":"150px","product-gallery-auto-crop":"false","product-image-auto-crop":"true","siteTitleContainerWidth":"220px"},"templateId":"52a74dafe4b073a80cd253c5","pageFeatures":[1,2,4],"impersonatedSession":false,"demoCollections":[{"collectionId":"540e1941e4b084aa623896bb","deleted":true},{"collectionId":"540e1937e4b084aa623896a6","deleted":true},{"collectionId":"5310cf0ee4b05207a03b0c2e","deleted":true},{"collectionId":"5334840be4b0ce89f43449a9","deleted":true},{"collectionId":"5334844be4b08e81fa54dc33","deleted":false},{"collectionId":"533485d8e4b0ecb20d5c07bb","deleted":true},{"collectionId":"533495eae4b03ead0875e0b4","deleted":true},{"collectionId":"53359869e4b020b97b39550a","deleted":true},{"collectionId":"53359b91e4b0087e7694cfe7","deleted":true},{"collectionId":"540e0057e4b00b3e08760743","deleted":true},{"collectionId":"54107165e4b0335e669da978","deleted":true},{"collectionId":"540e1d25e4b0d6dca0c75795","deleted":true},{"collectionId":"540e0250e4b01f6b4731d770","deleted":true},{"collectionId":"53348419e4b0c39637af6e82","deleted":true}],"isFacebookTab":false,"tzData":{"zones":[[-480,"US","P%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}}};</script><script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://mr-bean-k6m4.squarespace.com","name":"M-Soma Institute","description":"","image":"//static1.squarespace.com/static/583579706b8f5ba7a0c5757b/t/5840cb21c534a570921fac6e/1480669162615/"}</script><!--[if gte IE 9]> <link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=4"/><![endif]-->
+<style type="text/css">
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/75f41e/000000000000000000010096/27/l?subset_id=2&fvd=n3) format("woff2");
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/4221eb/000000000000000000010093/27/l?subset_id=2&fvd=i3) format("woff2");
+            font-weight: 300;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/e54bf3/000000000000000000010090/27/l?subset_id=2&fvd=i5) format("woff2");
+            font-weight: 500;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/1ffb9f/000000000000000000010092/27/l?subset_id=2&fvd=i7) format("woff2");
+            font-weight: 700;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/f73c9d/000000000000000000010097/27/l?subset_id=2&fvd=n8) format("woff2");
+            font-weight: 800;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: futura-pt;
+            src: url(https://fonts.typekit.net/af/f1920f/000000000000000000010098/27/l?subset_id=2&fvd=i8) format("woff2");
+            font-weight: 800;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: europa;
+            src: url(https://fonts.typekit.net/af/de8f44/0000000000000000000129a3/27/l?subset_id=2&fvd=n3) format("woff2");
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: europa;
+            src: url(https://fonts.typekit.net/af/4f7924/0000000000000000000129a6/27/l?subset_id=2&fvd=i3) format("woff2");
+            font-weight: 300;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: europa;
+            src: url(https://fonts.typekit.net/af/6478d5/0000000000000000000129a4/27/l?subset_id=2&fvd=n4) format("woff2");
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: europa;
+            src: url(https://fonts.typekit.net/af/9e7c05/0000000000000000000129a7/27/l?subset_id=2&fvd=i4) format("woff2");
+            font-weight: 400;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: europa;
+            src: url(https://fonts.typekit.net/af/e0a21b/0000000000000000000129a5/27/l?subset_id=2&fvd=n7) format("woff2");
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: europa;
+            src: url(https://fonts.typekit.net/af/a13e2d/0000000000000000000129a8/27/l?subset_id=2&fvd=i7) format("woff2");
+            font-weight: 700;
+            font-style: italic;
+        }
+    </style>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+    <script type="text/javascript">
+        SQUARESPACE_ROLLUPS = {};
+    </script>
+    <script>
+        (function(rollups, name) {
+            if (!rollups[name]) {
+                rollups[name] = {};
+            }
+            rollups[name].js = ["js/common.min.js"];
+        })(SQUARESPACE_ROLLUPS, 'squarespace-common');
+    </script>
+    <script type="text/javascript" data-sqs-type="dynamic-assets-loader">
+        (function() {
+            (function(a) {
+                function e(b) {
+                    -1 !== b.indexOf(".js") ? document.write("<script " + f + 'crossorigin="anonymous" src="' + b + '">\x3c/script>') : document.write('<link rel="stylesheet" type="text/css" href="' + b + '" />')
+                }
+                var g = function() {
+                        var b = window.location.search,
+                            a = b.indexOf("exclude=");
+                        return -1 < a && (b = b.substr(a + 8).split("&")[0]) ? b.split(",") : []
+                    }(),
+                    f;
+                f = window.__beta_flag_should_defer ? 'defer="defer" ' : "";
+                try {
+                    if (window.top != window && window.top.Squarespace && window.top.Squarespace.frameAvailable) {
+                        window.top.Squarespace.frameAvailable(window,
+                            SQUARESPACE_ROLLUPS);
+                        return
+                    }
+                } catch (h) {
+                    console.error(h)
+                }
+                for (var c in a)
+                    if (!(-1 < g.indexOf(c))) {
+                        if (a[c].js)
+                            for (var d = 0; d < a[c].js.length; d++) e(a[c].js[d]);
+                        if (a[c].css)
+                            for (d = 0; d < a[c].css.length; d++) e(a[c].css[d])
+                    }
+            })(SQUARESPACE_ROLLUPS);
+        })();
+    </script>
+    <script type="text/javascript" data-sqs-type="imageloader">
+        (function() {
+            var EXCLUDED_SIZES = function() {
+                    var a = window.location.search,
+                        b = a.indexOf("exclude_imageloader_sizes=");
+                    return -1 < b && (a = a.substr(b + 26).split("&")[0]) ? a.split(",").map(function(a) {
+                        return parseInt(a, 10)
+                    }) : []
+                }(),
+                SQUARESPACE_SIZES = [2500, 1500, 1E3, 750, 500, 300, 100].filter(function(a) {
+                    return -1 === EXCLUDED_SIZES.indexOf(a)
+                }),
+                IMAGE_LOADING_CLASS = "loading",
+                ImageLoader = new function() {
+                    this.load = function(a, b) {
+                        function d(a, b, c) {
+                            var d = new Image;
+                            d.onload = b;
+                            d.onerror = c;
+                            d.src = a
+                        }
+                        a.getDOMNode && (a = a.getDOMNode());
+                        var c = this._getDataFromNode(a,
+                                b),
+                            e = !(!c.dimensions || !c.dimensions.width || !c.dimensions.height),
+                            g = c.load + "";
+                        if ("false" === g) return !1;
+                        var h = c.mode;
+                        if (e && ("fit" === h || "fill" === h)) {
+                            h = a.parentNode;
+                            if (!h) return console.error("Not doing anything, parentNode not found."), !1;
+                            if (!this.refresh(a, b, h)) return !1
+                        }
+                        var n = this._intendToLoad(a, c);
+                        if ("string" === typeof n && "viewport" !== g) {
+                            var m = this.getUrl(n, c),
+                                g = a.getAttribute("data-image-resolution");
+                            a.getAttribute("src") !== m && this.isValidResolution(n, g) && (a.onload = function() {
+                                a.className = a.className.replace(IMAGE_LOADING_CLASS,
+                                    " ").trim();
+                                a.setAttribute("data-image-resolution", n)
+                            }, !a.getAttribute("src") && -1 === a.className.indexOf(IMAGE_LOADING_CLASS) && (a.className += (a.className ? " " : "") + IMAGE_LOADING_CLASS), !a.getAttribute("src") && e ? (a.setAttribute("src", m), c.useBgImage && (a.parentNode.style.backgroundImage = "url(" + m + ")")) : d(m, function() {
+                                e ? a.setAttribute("src", m) : (a.setAttribute("data-image-dimensions", this.width + "x" + this.height), ImageLoader.load(a, b))
+                            }, function() {
+                                a.className = a.className.replace(IMAGE_LOADING_CLASS, " ").trim();
+                                a.setAttribute("src", m)
+                            }));
+                            return !0
+                        }
+                        return n
+                    };
+                    this.refresh = function(a, b, d) {
+                        a.getDOMNode && (a = a.getDOMNode());
+                        d && d.getDOMNode && (d = d.getDOMNode());
+                        d = d || a.parentNode;
+                        if (!d) return console.error("Not doing anything, parentNode not found."), !1;
+                        var c = this._getDataFromNode(a, b),
+                            e = d.offsetWidth,
+                            g = d.offsetHeight;
+                        b = c.mode;
+                        if ("none" !== b) {
+                            var h = c.dimensions.width,
+                                n = c.dimensions.height,
+                                m = h / n,
+                                q = e / g;
+                            if (c.useBgImage && "fill" === b && "backgroundSize" in document.documentElement.style) return a.style.display = "none", d.style.backgroundSize =
+                                "cover", d.style.backgroundPosition = 100 * c.focalPoint.x + "% " + 100 * c.focalPoint.y + "%", !0;
+                            if (c.fixedRatio) "fill" == b && q > m || "fit" == b && q < m ? (k = 100, l = 100 * (q / m), r = (100 - l) * c.focalPoint.y, p = 0) : (k = 100 * (m / q), l = 100, r = 0, p = (100 - k) * c.focalPoint.x), a.style.top = r + "%", a.style.left = p + "%", a.style.width = k + "%", a.style.height = l + "%";
+                            else {
+                                var f;
+                                "fill" === b ? f = m > q ? g / n : e / h : "fit" === b && (f = m < q ? g / n : e / h);
+                                !c.stretch && "fit" == b && 1 < f && (f = 1);
+                                var k = Math.ceil(h * f),
+                                    l = Math.ceil(n * f);
+                                if (0 === k || 0 === l) return !1;
+                                var p, r;
+                                "fill" === b ? (p = Math.min(Math.max(e /
+                                    2 - k * c.focalPoint.x, e - k), 0), r = Math.min(Math.max(g / 2 - l * c.focalPoint.y, g - l), 0)) : "fit" === b && (f = c.fitAlignment, p = f.left ? 0 : f.right ? e - k : k < e ? (e - k) / 2 : 0, r = f.top ? 0 : f.bottom ? g - l : l < g ? (g - l) / 2 : 0, "inline" == this._getStyle(a, "display") && (a.style.fontSize = "0px"), this._resetAlt(a, function() {
+                                    k -= a.offsetHeight - a.clientHeight;
+                                    l -= a.offsetWidth - a.clientWidth
+                                }));
+                                a.style.top = Math.ceil(r) + "px";
+                                a.style.left = Math.ceil(p) + "px";
+                                a.style.width = Math.ceil(k) + "px";
+                                a.style.height = Math.ceil(l) + "px"
+                            }
+                            p = this._getStyle(d, "position");
+                            a.style.position =
+                                "relative" == p ? "absolute" : "relative";
+                            if ("fill" == b && (b = this._getStyle(d, "overflow"), !b || "hidden" != b)) d.style.overflow = "hidden";
+                            return !0
+                        }
+                    };
+                    this._intendToLoad = function(a, b) {
+                        function d(c, d) {
+                            "none" === b.mode && (a.style.width = null, a.style.height = null);
+                            var e = parseFloat(a.getAttribute(c)),
+                                f = parseFloat(e);
+                            if (!f || isNaN(f)) e = h._getStyle(a, c), f = parseFloat(e);
+                            if (!f || isNaN(f)) e = h._getStyle(a, "max-" + c, "max" + (c.substr(0, 1).toUpperCase() + c.substr(1))), f = parseFloat(e);
+                            if (0 === d || e) switch (h._stringType(e)) {
+                                case "percentage":
+                                    d =
+                                        parseInt(e, 10) / 100 * g["offset" + c.substr(0, 1).toUpperCase() + c.substr(1)];
+                                    break;
+                                case "number":
+                                    d = parseInt(e, 10)
+                            }!f && 0 !== d && !a.getAttribute("src") && (d = 0);
+                            return d
+                        }
+                        b = b || this._getDataFromNode(a);
+                        if (!b.source) return !1;
+                        var c = a.offsetWidth,
+                            e = a.offsetHeight,
+                            g = a.parentNode,
+                            h = this;
+                        this._resetAlt(a, function() {
+                            c = d("width", c);
+                            e = d("height", e)
+                        });
+                        0 === c && 0 === e ? (c = b.dimensions.width, e = b.dimensions.height) : 0 === c ? c = this.getDimensionForValue("width", e, b) : 0 === e && (e = this.getDimensionForValue("height", c, b));
+                        "viewport" === b.load &&
+                            (a.style.width = Math.floor(c) + "px", a.style.height = Math.floor(e) + "px");
+                        return this.getSquarespaceSize(c, e, b)
+                    };
+                    this._getDataFromNode = function(a, b) {
+                        b = b || {};
+                        var d = {
+                            focalPoint: {
+                                x: 0.5,
+                                y: 0.5
+                            },
+                            dimensions: {
+                                width: null,
+                                height: null
+                            },
+                            mode: "none",
+                            fitAlignment: {
+                                center: !0
+                            },
+                            load: "true",
+                            stretch: !0,
+                            fixedRatio: !1
+                        };
+                        if (b.focalPoint) d.focalPoint = b.focalPoint;
+                        else {
+                            var c = a.getAttribute("data-image-focal-point");
+                            if (c && (c = c.split(",")) && 2 == c.length) d.focalPoint = {
+                                x: parseFloat(c[0]),
+                                y: parseFloat(c[1])
+                            }
+                        }
+                        if (b.dimensions) d.dimensions =
+                            b.dimensions;
+                        else if ((c = a.getAttribute("data-image-dimensions")) && (c = c.split("x")) && 2 == c.length) d.dimensions = {
+                            width: parseInt(c[0], 10),
+                            height: parseInt(c[1], 10)
+                        };
+                        b.mode ? d.mode = b.mode : a.parentNode && (c = a.parentNode.className, -1 !== c.indexOf("content-fill") ? d.mode = "fill" : -1 !== c.indexOf("content-fit") && (d.mode = "fit"));
+                        if ("fit" === d.mode && a.parentNode && (c = b.fitAlignment || a.getAttribute("data-alignment") || a.parentNode.getAttribute("data-alignment"))) d.fitAlignment = {
+                            top: -1 !== c.indexOf("top"),
+                            left: -1 !== c.indexOf("left"),
+                            center: -1 !== c.indexOf("center"),
+                            right: -1 !== c.indexOf("right"),
+                            bottom: -1 !== c.indexOf("bottom")
+                        };
+                        b.load ? d.load = b.load : (c = a.getAttribute("data-load")) && (d.load = c);
+                        if ("undefined" !== typeof b.stretch) d.stretch = b.stretch;
+                        else if (c = a.getAttribute("data-image-stretch")) d.stretch = "true" === c ? !0 : !1;
+                        d.source = b.source ? b.source : a.getAttribute("data-src");
+                        d.source && this.isSquarespaceUrl(d.source) && ("http:" === d.source.substr(0, 5) && "https" === window.location.protocol.substr(0, 5)) && (d.source = d.source.replace("http://",
+                            "https://"));
+                        if (b.fixedRatio) d.fixedRatio = b.fixedRatio;
+                        else if (c = a.getAttribute("data-fixed-ratio")) d.fixedRatio = "true" == c;
+                        b.useBgImage ? d.useBgImage = b.useBgImage : (c = a.getAttribute("data-use-bg-image"), d.useBgImage = "true" === c || !0 === c ? !0 : !1);
+                        return d
+                    };
+                    this._stringType = function(a) {
+                        return "string" === typeof a && -1 !== a.indexOf("%") ? "percentage" : isNaN(parseInt(a, 10)) ? NaN : "number"
+                    };
+                    this._getStyle = function(a, b, d) {
+                        var c;
+                        a.currentStyle ? c = a.currentStyle[d || b] : window.getComputedStyle && (c = document.defaultView.getComputedStyle(a,
+                            null).getPropertyValue(b));
+                        return c
+                    };
+                    this._isVisible = function(a) {
+                        a = a.getBoundingClientRect();
+                        return 0 <= a.left && 0 <= a.top || 0 <= a.bottom && 0 <= a.right || 0 <= a.left && 0 <= a.bottom || 0 <= a.right && 0 <= a.top
+                    };
+                    this.getSquarespaceSize = function(a, b, d) {
+                        a = Math.max(b / (d.dimensions.height / d.dimensions.width), a);
+                        "undefined" === typeof app && "number" === typeof window.devicePixelRatio && (a *= window.devicePixelRatio);
+                        for (b = 1; b < SQUARESPACE_SIZES.length && !(a > SQUARESPACE_SIZES[b]); b++);
+                        return SQUARESPACE_SIZES[b - 1] + "w"
+                    };
+                    this.getDimensionForValue =
+                        function(a, b, d) {
+                            var c = d.dimensions.width;
+                            d = d.dimensions.height;
+                            return "width" == a ? c / d * b : "height" == a ? d / c * b : NaN
+                        };
+                    this.getUrl = function(a, b) {
+                        var d = b.source;
+                        return a && ("/" == d[0] || this.isSquarespaceUrl(d)) ? (-1 === d.indexOf("format=" + a) && (d = d + (-1 !== d.indexOf("?") ? "&" : "?") + "format=" + a), d) : b.source
+                    };
+                    this.isSquarespaceUrl = function(a) {
+                        return -1 !== a.indexOf("squarespace.com") || -1 !== a.indexOf("squarespace.net") || -1 !== a.indexOf("sqsp.net")
+                    };
+                    this.isValidResolution = function(a, b) {
+                        a = parseInt(a, 10);
+                        b = parseInt(b, 10);
+                        return isNaN(a) ||
+                            isNaN(b) ? !0 : a > b
+                    };
+                    this._resetAlt = function(a, b) {
+                        var d = a.getAttribute("alt"),
+                            c = d && 0 < d.length && !a.getAttribute("src");
+                        if (c) {
+                            var e = a.style.display;
+                            a.removeAttribute("alt");
+                            a.style.display = "none";
+                            a.offsetHeight + 0;
+                            a.style.display = e
+                        }
+                        b.call(this);
+                        c && a.setAttribute("alt", d)
+                    };
+                    this.bootstrap = function() {
+                        var a = document.images;
+                        if (0 < a.length)
+                            for (var b = 0, d = a.length; b < d; b++)((a[b].hasAttribute ? a[b].hasAttribute("data-image") : a[b].attributes["data-image"]) || (a[b].hasAttribute ? a[b].hasAttribute("data-src") : a[b].attributes["data-src"])) &&
+                                "false" !== (a[b].getAttribute ? a[b].getAttribute("data-load") : a[b].attributes["data-load"]) + "" && ImageLoader.load(a[b])
+                    }
+                };
+            window.ImageLoader = ImageLoader;
+            window.YUI && YUI.add("squarespace-imageloader", function(a) {}, "1.0", {
+                requires: []
+            });
+        })();
+    </script>
+    <script>
+        Static.SQUARESPACE_CONTEXT = {
+            "facebookAppId": "314192535267336",
+            "rollups": {
+                "squarespace-announcement-bar": {
+                    "css": "css/announcement.css",
+                    "js": "js/announcement.js"
+                },
+                "squarespace-audio-player": {
+                    "css": "css/audio.css",
+                    "js": "js/audio.js"
+                },
+                "squarespace-blog-collection-list": {
+                    "css": "css/blog.css",
+                    "js": "js/blog.js"
+                },
+                "squarespace-calendar-block-renderer": {
+                    "css": "css/calendar.min.css",
+                    "js": "js/calendar.min.js"
+                },
+                "squarespace-chartjs-helpers": {
+                    "css": "css/charts.min.css",
+                    "js": "js/charts.min.js"
+                },
+                "squarespace-comments": {
+                    "css": "css/comments.min.css",
+                    "js": "js/comments.min.js"
+                },
+                "squarespace-dialog": {
+                    "css": "css/dialog.min.css",
+                    "js": "js/dialog.min.js"
+                },
+                "squarespace-events-collection": {
+                    "css": "css/collection.min.css",
+                    "js": "js/collection.min.js"
+                },
+                "squarespace-gallery-collection-list": {
+                    "css": "css/gallery.min.css",
+                    "js": "js/gallery.min.js"
+                },
+                "squarespace-image-zoom": {
+                    "css": "css/image-zoom.min.css",
+                    "js": "js/image-zoom.min.js"
+                },
+                "squarespace-pinterest": {
+                    "css": "css/pinterest.min.css",
+                    "js": "js/pinterest.min.js"
+                },
+                "squarespace-product-quick-view": {
+                    "css": "css/product.min.css",
+                    "js": "js/product.min.js"
+                },
+                "squarespace-products-collection-item-v2": {
+                    "css": "css/itemv2.min.css",
+                    "js": "js/itemv2.min.js"
+                },
+                "squarespace-products-collection-list-v2": {
+                    "css": "css/listv2.min.css",
+                    "js": "js/listv2.min.js"
+                },
+                "squarespace-search-page": {
+                    "css": "css/search.min.css",
+                    "js": "js/search.min.js"
+                },
+                "squarespace-share-buttons": {
+                    "js": "js/share-buttons.min.js"
+                },
+                "squarespace-simple-liking": {
+                    "css": "css/simple-liking.min.css",
+                    "js": "js/simple-liking.min.js"
+                },
+                "squarespace-social-buttons": {
+                    "css": "css/social-buttons.min.css",
+                    "js": "js/social-buttons.min.js"
+                },
+                "squarespace-tourdates": {
+                    "css": "css/tourdates.min.css",
+                    "js": "js/tourdates.min.js"
+                }
+            },
+            "pageType": 1,
+            "website": {
+                "id": "57ab103115d5dbcec31aeabc",
+                "identifier": "msoma",
+                "websiteType": 1,
+                "contentModifiedOn": 1470923259816,
+                "cloneable": false,
+                "siteStatus": {},
+                "language": "en-US",
+                "timeZone": "America/Berkeley",
+                "machineTimeZoneOffset": -25200000,
+                "timeZoneOffset": -25200000,
+                "timeZoneAbbr": "PDT",
+                "siteTitle": "M Soma",
+                "siteDescription": "",
+                "logoImageId": "57ab238e579fb343a3df08fa",
+                "socialLogoImageId": "57ab1244579fb343a3de9d4c",
+                "shareButtonOptions": {
+                    "7": true,
+                    "1": true,
+                    "8": true,
+                    "4": true,
+                    "5": true,
+                    "3": true,
+                    "2": true,
+                    "6": true
+                },
+                "logoImageUrl": "images/logo.png",
+                "socialLogoImageUrl": "images/social-logo.png",
+                "authenticUrl": "http://msoma.org",
+                "internalUrl": "http://msoma.org",
+                "baseUrl": "http://msoma.org",
+                "typekitId": "",
+                "statsMigrated": false,
+                "imageMetadataProcessingEnabled": false
+            },
+            "websiteSettings": {
+                "id": "57ab103115d5dbcec31aeabf",
+                "websiteId": "57ab103115d5dbcec31aeabc",
+                "subjects": [],
+                "country": "US",
+                "state": "CA",
+                "markdownMode": false,
+                "simpleLikingEnabled": true,
+                "mobileInfoBarSettings": {
+                    "isContactEmailEnabled": false,
+                    "isContactPhoneNumberEnabled": false,
+                    "isLocationEnabled": false,
+                    "isBusinessHoursEnabled": false
+                },
+                "lastAgreedTermsOfService": 2,
+                "defaultPostFormat": "%y/%m/%d/%t",
+                "commentLikesAllowed": true,
+                "commentAnonAllowed": true,
+                "commentThreaded": true,
+                "commentApprovalRequired": false,
+                "commentAvatarsOn": true,
+                "commentSortType": 2,
+                "commentFlagThreshold": 0,
+                "commentFlagsAllowed": true,
+                "commentEnableByDefault": true,
+                "commentDisableAfterDaysDefault": 0,
+                "disqusShortname": "",
+                "homepageTitleFormat": "%s",
+                "collectionTitleFormat": "%c \u2014 %s",
+                "itemTitleFormat": "%i \u2014 %s",
+                "commentsEnabled": false,
+                "allowSquarespacePromotion": true,
+                "storeSettings": {
+                    "returnPolicy": null,
+                    "termsOfService": null,
+                    "privacyPolicy": null,
+                    "paymentSettings": {},
+                    "expressCheckout": false,
+                    "useLightCart": false,
+                    "showNoteField": false,
+                    "currenciesSupported": ["USD", "CAD", "GBP", "AUD", "EUR", "CHF", "NOK", "SEK", "DKK"],
+                    "defaultCurrency": "USD",
+                    "selectedCurrency": "USD",
+                    "measurementStandard": 1,
+                    "showCustomCheckoutForm": false,
+                    "enableMailingListOptInByDefault": true,
+                    "sameAsRetailLocation": false,
+                    "stripeConnected": false,
+                    "isLive": false,
+                    "storeState": 3
+                },
+                "useEscapeKeyToLogin": true,
+                "ssBadgeType": 1,
+                "ssBadgePosition": 4,
+                "ssBadgeVisibility": 1,
+                "ssBadgeDevices": 1,
+                "pinterestOverlayOptions": {
+                    "mode": "disabled"
+                },
+                "ampEnabled": false
+            },
+            "websiteCloneable": false,
+            "collection": {
+                "title": "Home",
+                "id": "57ab250a03596e7f82f995ac",
+                "fullUrl": "/",
+                "type": 1
+            },
+            "subscribed": false,
+            "appDomain": "squarespace.com",
+            "templateTweakable": true,
+            "tweakJSON": {
+                "aspect-ratio": "Auto",
+                "banner-slideshow-controls": "Arrows",
+                "gallery-arrow-style": "No Background",
+                "gallery-aspect-ratio": "3:2 Standard",
+                "gallery-auto-crop": "true",
+                "gallery-autoplay": "false",
+                "gallery-design": "Grid",
+                "gallery-info-overlay": "Show on Hover",
+                "gallery-loop": "false",
+                "gallery-navigation": "Bullets",
+                "gallery-show-arrows": "true",
+                "gallery-transitions": "Fade",
+                "galleryArrowBackground": "rgba(34,34,34,1)",
+                "galleryArrowColor": "rgba(255,255,255,1)",
+                "galleryAutoplaySpeed": "3",
+                "galleryCircleColor": "rgba(255,255,255,1)",
+                "galleryInfoBackground": "rgba(0, 0, 0, .7)",
+                "galleryThumbnailSize": "100px",
+                "gridSize": "280px",
+                "gridSpacing": "10px",
+                "logoContainerWidth": "140px",
+                "product-gallery-auto-crop": "false",
+                "product-image-auto-crop": "true",
+                "siteTitleContainerWidth": "220px"
+            },
+            "templateId": "52a74dafe4b073a80cd253c5",
+            "pageFeatures": [1, 2, 4],
+            "impersonatedSession": false,
+            "demoCollections": [{
+                "collectionId": "540e1941e4b084aa623896bb",
+                "deleted": true
+            }, {
+                "collectionId": "540e1937e4b084aa623896a6",
+                "deleted": true
+            }, {
+                "collectionId": "5310cf0ee4b05207a03b0c2e",
+                "deleted": true
+            }, {
+                "collectionId": "5334840be4b0ce89f43449a9",
+                "deleted": true
+            }, {
+                "collectionId": "5334844be4b08e81fa54dc33",
+                "deleted": true
+            }, {
+                "collectionId": "533485d8e4b0ecb20d5c07bb",
+                "deleted": true
+            }, {
+                "collectionId": "533495eae4b03ead0875e0b4",
+                "deleted": true
+            }, {
+                "collectionId": "53359869e4b020b97b39550a",
+                "deleted": true
+            }, {
+                "collectionId": "53359b91e4b0087e7694cfe7",
+                "deleted": true
+            }, {
+                "collectionId": "540e0057e4b00b3e08760743",
+                "deleted": true
+            }, {
+                "collectionId": "54107165e4b0335e669da978",
+                "deleted": true
+            }, {
+                "collectionId": "540e1d25e4b0d6dca0c75795",
+                "deleted": true
+            }, {
+                "collectionId": "540e0250e4b01f6b4731d770",
+                "deleted": true
+            }, {
+                "collectionId": "53348419e4b0c39637af6e82",
+                "deleted": true
+            }],
+            "isFacebookTab": false,
+            "tzData": {
+                "zones": [
+                    [-480, "US", "P%sT", null]
+                ],
+                "rules": {
+                    "US": [
+                        [1967, 2006, null, "Oct", "lastSun", "2:00", "0", "S"],
+                        [1987, 2006, null, "Apr", "Sun>=1", "2:00", "1:00", "D"],
+                        [2007, "max", null, "Mar", "Sun>=8", "2:00", "1:00", "D"],
+                        [2007, "max", null, "Nov", "Sun>=1", "2:00", "0", "S"]
+                    ]
+                }
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        SquarespaceFonts.loadViaContext();
+        Squarespace.load(window);
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"http://msoma.org","name":"M-Soma Institute","description":"","image":"../img/json.png"}</script><!--[if gte IE 9]> <link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&part=4"/><![endif]-->
 <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&noMedia=true&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&noMedia=true&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&noMedia=true&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/583579706b8f5ba7a0c5757b/17/52a74dafe4b073a80cd253c5/583579716b8f5ba7a0c57583/974-05142015/1480670019974/site.css?&filterFeatures=false&noMedia=true&part=4"/><![endif]-->
 <!--[if !IE]> --><link rel="stylesheet" type="text/css" href="../css/site.css"/><!-- <![endif]-->
 <!-- End of Squarespace Headers -->
